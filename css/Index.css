@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+
+}
+
+body {
+  background: white;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+}
+.con{
+  width:90%;
+}
+nav {
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #2C4DF9 solid 2px;
+}
+
+nav>h1,
+nav>button {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 1px #2C4DF9 solid;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  background: white;
+  font-weight: 600;
+  outline: none;
+}
+
+button:hover {
+  background: #2C4DF9;
+  color: white;
+  transition: 0.5s;
+}
+
+.hello {
+  flex-grow: 1;
+  padding: 20px;
+  width: 80%;
+  border: #2C4DF9 solid 1px;
+  border-radius: 25px 5px 25px 5px;
+  margin: 3%;
+}
+
+h2 {
+  border-left: #2C4DF9 solid 3px;
+}
+
+
+.gray {
+  transform: rotate(5deg);
+  color: gray;
+  font-size: 20px;
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.sponser {
+  flex-grow: 1;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.gray:hover {
+  color: blue;
+  transform: rotate(0deg);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.gray:before {
+  content: "";
+  position: absolute;
+  background: blue;
+  height: 1px;
+  bottom: 0;
+  width: 100%;
+}
+
+.fotter {
+  flex-grow: 1;
+  display: flex;
+  background: black;
+  color: white;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+li {
+  list-style: square;
+  color: #4450D0;
+  font-size: 20px;
+}
+
+.center {
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+input {
+  background: white;
+  display: none;
+}
+
+label {
+  color: white;
+  background: #4050FF;
+  width: 50%;
+  border: blue 1px solid;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 20px;
+}

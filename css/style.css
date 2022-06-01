@@ -1,0 +1,321 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #f2f2f2;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  resize: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.color {
+  background: white;
+  width: 1rem;
+}
+
+/*nav*/
+nav {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: #4151FF 2px solid;
+  z-index: 1000;
+  margin-bottom: 1rem;
+  max-width: 40rem;
+}
+
+.buttons {
+  flex-grow: 1;
+  border-bottom: blue 1px solid;
+  background: #4151FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons>button {
+  flex-grow: 1;
+  padding: 0.5rem;
+  background: #4151FF;
+  color: white;
+  height: 100%;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: #979FFF solid 1px;
+  outline: none;
+}
+
+.buttons>button:hover {
+  background: white;
+  transition: 0.5s;
+  color: #4151FF;
+}
+
+.showbuttons {
+  flex-grow: 1;
+  color: #4151FF;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+
+.showbuttons>div {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: no-wrap;
+  overflow-x: hidden;
+  flex-grow: 1;
+  height: 100%;
+  color: black;
+}
+
+.input {
+  height: 80%;
+  width: 3rem;
+  border: black solid 1px;
+}
+
+.bold {
+  font-weight: 900;
+  background: white;
+  border: black solid 1px;
+  height: 80%;
+  width: 2rem;
+}
+
+.underline {
+  text-decoration: underline;
+  background: white;
+  border: black solid 1px;
+  height: 80%;
+  width: 2rem;
+}
+
+.linethrought {
+  text-decoration: line-through;
+  background: white;
+  border: black solid 1px;
+  height: 80%;
+  width: 2rem;
+}
+
+.unlist {
+  text-decoration: italic;
+  background: white;
+  border: black solid 1px;
+  height: 80%;
+  width: 2rem;
+  outline: none;
+  overflow-y: hidden;
+}
+
+.showbuttons>div>button:hover {
+  background: #3D4DFF;
+  color: white;
+}
+
+button>img {
+  width: 100%;
+}
+
+/*conofbody*/
+.conofbody {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: scroll;
+  margin-bottom: 1rem;
+}
+
+.pages>img {
+  width: 3rem;
+  border: solid 2px #FF5C5C;
+  height: 5rem;
+}
+
+.endview {
+  display: none;
+}
+
+/*pages*/
+.page {
+  background: white;
+  height: 35rem;
+  width: 18rem;
+  box-shadow: 2px 2px 2px 2px #D8D8D8;
+  outline: none;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+
+}
+
+.page>div {
+  overflow: hidden;
+}
+
+.number {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: gray;
+  font-size: 12px;
+}
+
+.custbutton {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #4151FF;
+  color: white;
+  border-radius: 25px;
+}
+
+.download>input {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.pageimg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+
+/*controöls*/
+.controlls {
+  border-top: #4151FF 2px solid;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 40rem;
+}
+
+.controlls>button {
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #4151FF;
+  color: white;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.conpreview {
+  display: none;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  overflow: scroll;
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background: rgba(35, 35, 35, 1);
+}
+
+.endview {
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.wait {
+  position: fixed;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background: #071D8E;
+  z-index: 1000000000000000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.alerter {
+  position: absolute;
+  top: 6rem;
+  right: 5rem;
+  left: 5rem;
+  background: #4A59FF;
+  color: white;
+  border: 5px #6F7BFF solid;
+  border-radius: 7px;
+  padding: 20px;
+  display: none;
+  z-index: 1000000;
+}
+
+.guide {
+  position: absolute;
+  top: 6rem;
+  right: 5rem;
+  left:5rem;
+  height: 3rem;
+  background: #3D4DFF;
+  color: white;
+  border: 5px lightsalmon solid;
+  border-radius: 7px;
+  padding: 20px;
+  z-index: 100000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guide>button {
+  background: lightsalmon;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 3rem;
+  height: 2rem;
+}
