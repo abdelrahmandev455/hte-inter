@@ -14,7 +14,18 @@
   <title>Html text editor</title>
 </head>
 
-<body>
+<body class="body">
+  <!--nav-->
+  <div class="nav">
+    <h3>Themes</h3>
+    <button onclick="dark('black')">Dark</button>
+    <button onclick="yellow()">Fresh</button>
+    <button onclick="skyblue()">Cloud</button>
+    <button onclick="orange()">Orchid</button>
+    <button onclick="purple()">Plump</button>
+    <button onclick="light()">Light</button>
+    <h3></h3>
+  </div>
   <!--guide-->
   <div class="guide" ondblclick="delGuide()">
     Welcome to HTE.
@@ -105,6 +116,9 @@
 
   <!--controlls-->
   <div class="controlls">
+    <button onclick="navopen()">
+      🖌
+    </button>
     <button onclick="add()">
       +
     </button>
@@ -128,6 +142,7 @@
   <script src="js/preview.js"></script>
   <script src="js/others.js"></script>
   <script src="js/Guide.js"></script>
+  <script src="js/navham.js"></script>
 </body>
 
 </html>

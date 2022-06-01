@@ -28,6 +28,33 @@ button {
   width: 1rem;
 }
 
+.nav{
+  position:fixed;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  background: white;
+  width:30%;
+  display:none;
+  flex-direction: column;
+  padding:20px;
+  z-index: 1000000;
+  border-left:solid #818CFF 4px;
+  gap:1rem;
+}
+
+.nav>button{
+  background: white;
+  border: black solid 1px;
+  padding:0.5rem 1rem;
+  width: 5rem;
+  outline: none;
+  overflow-y: hidden;
+}
+.nav>button:hover{
+  background: #818CFF;
+  color:white;
+}
 /*nav*/
 nav {
   width: 100%;
@@ -124,7 +151,6 @@ nav {
 }
 
 .unlist {
-  text-decoration: italic;
   background: white;
   border: black solid 1px;
   height: 80%;
@@ -219,7 +245,7 @@ button>img {
   border-radius: 20px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   max-width: 40rem;
 }
 
